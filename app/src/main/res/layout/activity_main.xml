@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.android.cricketcount.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorBG"
+                android:padding="4dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/chi"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/team_a_score"
+                    android:textSize="56sp"
+                    android:textColor="@android:color/background_light"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:layout_margin="8dp"
+            android:text="2 points"
+            android:textColor="@android:color/background_light"
+            android:fontFamily="@font/latomed"
+            android:onClick="addTwoForTeamA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:textColor="@android:color/background_light"
+            android:layout_margin="8dp"
+            android:text="3 points"
+            android:fontFamily="@font/latomed"
+            android:onClick="addThreeForTeamA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:textColor="@android:color/background_light"
+            android:layout_margin="8dp"
+            android:text="free throw"
+            android:fontFamily="@font/latomed"
+            android:onClick="addOneForTeamA"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@color/colorBG">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lol"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/team_b_score"
+                android:textSize="56sp"
+                android:textColor="@android:color/background_light"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/background_light"
+            android:text="2 points"
+            android:fontFamily="@font/latomed"
+            android:onClick="addTwoForTeamB"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/background_light"
+            android:text="3 points"
+            android:fontFamily="@font/latomed"
+            android:onClick="addThreeForTeamB"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBG"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/background_light"
+            android:text="free throw"
+            android:fontFamily="@font/latomed"
+            android:onClick="addOneForTeamB"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:fontFamily="@font/latomed"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:onClick="resetScore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnReset"
+        android:background="@color/colorBG"/>
+
+
+
+</RelativeLayout>
