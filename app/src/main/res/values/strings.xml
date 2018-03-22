@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cricket Count</string>
+    <string name="app_name">NBA</string>
     <string name="freethrow">Free Throw</string>
     <string name="two">+2 points</string>
     <string name="three">+3 points</string>
