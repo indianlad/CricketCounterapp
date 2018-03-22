@@ -29,7 +29,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    android:text="@string/zero"
                     android:id="@+id/team_a_score"
                     android:textSize="56sp"
                     android:textColor="@android:color/background_light"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBG"
             android:layout_margin="8dp"
-            android:text="2 points"
+            android:text="@string/two"
             android:textColor="@android:color/background_light"
             android:fontFamily="@font/latomed"
             android:onClick="addTwoForTeamA"/>
@@ -51,7 +51,7 @@
             android:background="@color/colorBG"
             android:textColor="@android:color/background_light"
             android:layout_margin="8dp"
-            android:text="3 points"
+            android:text="@string/three"
             android:fontFamily="@font/latomed"
             android:onClick="addThreeForTeamA"/>
         <Button
@@ -60,7 +60,7 @@
             android:background="@color/colorBG"
             android:textColor="@android:color/background_light"
             android:layout_margin="8dp"
-            android:text="free throw"
+            android:text="@string/freethrow"
             android:fontFamily="@font/latomed"
             android:onClick="addOneForTeamA"/>
 
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/zero"
                 android:id="@+id/team_b_score"
                 android:textSize="56sp"
                 android:textColor="@android:color/background_light"
@@ -99,7 +99,7 @@
             android:background="@color/colorBG"
             android:layout_margin="8dp"
             android:textColor="@android:color/background_light"
-            android:text="2 points"
+            android:text="@string/two"
             android:fontFamily="@font/latomed"
             android:onClick="addTwoForTeamB"/>
         <Button
@@ -108,7 +108,7 @@
             android:background="@color/colorBG"
             android:layout_margin="8dp"
             android:textColor="@android:color/background_light"
-            android:text="3 points"
+            android:text="@string/three"
             android:fontFamily="@font/latomed"
             android:onClick="addThreeForTeamB"/>
         <Button
@@ -117,7 +117,7 @@
             android:background="@color/colorBG"
             android:layout_margin="8dp"
             android:textColor="@android:color/background_light"
-            android:text="free throw"
+            android:text="@string/freethrow"
             android:fontFamily="@font/latomed"
             android:onClick="addOneForTeamB"/>
 
@@ -129,7 +129,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="reset"
+        android:text="@string/reset"
         android:fontFamily="@font/latomed"
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
